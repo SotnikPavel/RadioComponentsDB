@@ -1,0 +1,31 @@
+﻿<Window x:Class="BDR.классы_базовыепараметры"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BDR"
+        mc:Ignorable="d"
+        Title="Базовые параметры" Height="300" Width="300">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="187*"/>
+            <ColumnDefinition Width="105*"/>
+        </Grid.ColumnDefinitions>
+        <Menu x:Name="menu" HorizontalAlignment="Left" Height="34" VerticalAlignment="Top" Width="292" Grid.ColumnSpan="2">
+            <MenuItem Header="Добавить" Click="MenuItem_Click"/>
+            <MenuItem Header="Изменить"/>
+            <MenuItem Header="Удалить"/>
+            <MenuItem Header="Обновить"/>
+            <MenuItem Header="Копия"/>
+        </Menu>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="24" Margin="0,34,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="292" Grid.ColumnSpan="2"/>
+        <ListView x:Name="TableView" Margin="0,34,0,0"  Grid.ColumnSpan="2" SelectionChanged="TableView_SelectionChanged">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Width="80" Header="Обозначение"/>
+                    <GridViewColumn Width="80" Header="Описание"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Window>

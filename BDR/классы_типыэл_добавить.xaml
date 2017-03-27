@@ -1,0 +1,49 @@
+﻿<Window x:Class="BDR.классы_типыэл_добавить"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BDR"
+        mc:Ignorable="d"
+        Title="New Element type" Height="353.483" Width="591.393">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="151*"/>
+            <ColumnDefinition Width="141*"/>
+        </Grid.ColumnDefinitions>
+        <Menu x:Name="menu" HorizontalAlignment="Left" Height="38" Margin="1,0,0,0" VerticalAlignment="Top" Width="582" Grid.ColumnSpan="2">
+            <MenuItem >
+                <MenuItem.Header>Cохранить</MenuItem.Header>
+            </MenuItem>
+            <MenuItem >
+                <MenuItem.Header>Закрыть</MenuItem.Header>
+            </MenuItem>
+            <MenuItem >
+                <MenuItem.Header>Инфо</MenuItem.Header>
+            </MenuItem>
+            <MenuItem >
+                <MenuItem.Header>Внешний вид</MenuItem.Header>
+            </MenuItem>
+        </Menu>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left"  Margin="10,73,0,0" TextWrapping="Wrap" Text="Наименование" VerticalAlignment="Top" />
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="10,101,0,0" TextWrapping="Wrap" Text="Описание" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="10,240,0,0" TextWrapping="Wrap" Text="Базовый класс" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="16" Margin="95,73,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="172" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="textBox_Copy" VerticalScrollBarVisibility ="Visible" HorizontalAlignment="Left" Height="42" Margin="95,100,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="333" Grid.ColumnSpan="2"/>
+        <TextBox IsReadOnly="True" Height="17"  Grid.Column="0" TextWrapping="Wrap" VerticalAlignment="Top" Margin="109,185,64,0" Width="128"/>
+        <TextBlock x:Name="textBlock1_Copy" HorizontalAlignment="Left" Margin="10,154,0,0" TextWrapping="Wrap" Text="Класс элемента" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock1_Copy1" HorizontalAlignment="Left" Margin="10,183,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Корпус элемен"/><Run Text="т"/><Run Text="а"/></TextBlock>
+        <TextBlock x:Name="textBlock1_Copy2" HorizontalAlignment="Left" Margin="10,214,0,0" TextWrapping="Wrap" Text="Производитель" VerticalAlignment="Top"/>
+        <TextBox IsReadOnly="True" Height="17"  Grid.Column="0" TextWrapping="Wrap" VerticalAlignment="Top" Margin="109,157,64,0" Width="128"/>
+        <Button Content="..." VerticalAlignment="Top" Height="17" Margin="221,157,0,0" HorizontalAlignment="Left" Width="16"/>
+        <TextBox IsReadOnly="True" Height="17"  Grid.Column="0" TextWrapping="Wrap" VerticalAlignment="Top" Margin="109,241,64,0" Width="128"/>
+        <Button Content="..." VerticalAlignment="Top" Height="17" Margin="221,241,64,0"/>
+        <TextBox IsReadOnly="True" Height="17"  Grid.Column="0" TextWrapping="Wrap" VerticalAlignment="Top" Margin="109,215,64,0" Width="128"/>
+        <Button Content="..." VerticalAlignment="Top" Height="17" Margin="221,215,64,0" RenderTransformOrigin="0.518,0.433"/>
+        <Button Content="..." VerticalAlignment="Top" Height="17" Margin="221,185,0,0" HorizontalAlignment="Left" Width="16" RenderTransformOrigin="0.807,2.665"/>
+        <TextBlock x:Name="textBlock2_Copy" HorizontalAlignment="Left" Margin="10,262,0,0" TextWrapping="Wrap" Text="DataSheet" VerticalAlignment="Top"/>
+        <TextBox IsReadOnly="True" Height="17"  Grid.Column="0" TextWrapping="Wrap" VerticalAlignment="Top" Margin="109,263,64,0" Width="128"/>
+        <Button Content="..." VerticalAlignment="Top" Height="17" Margin="221,263,64,0"/>
+
+    </Grid>
+</Window>

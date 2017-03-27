@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{22A6B88B-73E0-46C0-84E2-6BD8532ECD4D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BDR</RootNamespace>
+    <AssemblyName>BDR</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="классы.xaml.cs">
+      <DependentUpon>классы.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="классы_базовые параметры.xaml.cs">
+      <DependentUpon>классы_базовые параметры.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="классы_базовыепараметры.xaml.cs">
+      <DependentUpon>классы_базовыепараметры.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="классы_базовыепараметры_добавить.xaml.cs">
+      <DependentUpon>классы_базовыепараметры_добавить.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="классы_добавить.xaml.cs">
+      <DependentUpon>классы_добавить.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="классы_изменить.xaml.cs">
+      <DependentUpon>классы_изменить.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="классы_копия.xaml.cs">
+      <DependentUpon>классы_копия.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="классы_прайс.xaml.cs">
+      <DependentUpon>классы_прайс.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="классы_типыэл.xaml.cs">
+      <DependentUpon>классы_типыэл.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="классы_типыэл_добавить.xaml.cs">
+      <DependentUpon>классы_типыэл_добавить.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="корпуса.xaml.cs">
+      <DependentUpon>корпуса.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="корпуса_добавить.xaml.cs">
+      <DependentUpon>корпуса_добавить.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="корпуса_изменить.xaml.cs">
+      <DependentUpon>корпуса_изменить.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="корпуса_инфо.xaml.cs">
+      <DependentUpon>корпуса_инфо.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="корпуса_копия.xaml.cs">
+      <DependentUpon>корпуса_копия.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="места_хранения.xaml.cs">
+      <DependentUpon>места_хранения.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="места_хранения_добавить.xaml.cs">
+      <DependentUpon>места_хранения_добавить.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="места_хранения_изменить.xaml.cs">
+      <DependentUpon>места_хранения_изменить.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="места_хранения_копия.xaml.cs">
+      <DependentUpon>места_хранения_копия.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="наличие_элементов.xaml.cs">
+      <DependentUpon>наличие_элементов.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="наличие_элементов_добавить.xaml.cs">
+      <DependentUpon>наличие_элементов_добавить.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="производители.xaml.cs">
+      <DependentUpon>производители.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="производители_добавить.xaml.cs">
+      <DependentUpon>производители_добавить.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="производители_добавить_изменить_копия_инфо.xaml.cs">
+      <DependentUpon>производители_добавить_изменить_копия_инфо.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="производители_изменить.xaml.cs">
+      <DependentUpon>производители_изменить.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="производители_копия.xaml.cs">
+      <DependentUpon>производители_копия.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="производитель_типыэл.xaml.cs">
+      <DependentUpon>производитель_типыэл.xaml</DependentUpon>
+    </Compile>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="классы.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="классы_базовые параметры.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="классы_базовыепараметры.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="классы_базовыепараметры_добавить.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="классы_добавить.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="классы_изменить.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="классы_копия.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="классы_прайс.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="классы_типыэл.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="классы_типыэл_добавить.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="корпуса.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="корпуса_добавить.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="корпуса_изменить.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="корпуса_инфо.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="корпуса_копия.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="места_хранения.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="места_хранения_добавить.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="места_хранения_изменить.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="места_хранения_копия.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="наличие_элементов.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="наличие_элементов_добавить.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="производители.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="производители_добавить.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="производители_добавить_изменить_копия_инфо.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="производители_изменить.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="производители_копия.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="производитель_типыэл.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
