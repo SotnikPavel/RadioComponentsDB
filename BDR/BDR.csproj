@@ -59,6 +59,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="test_wpf_gleb.xaml.cs">
+      <DependentUpon>test_wpf_gleb.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="единицы_измерения_выбор.xaml.cs">
+      <DependentUpon>единицы_измерения_выбор.xaml</DependentUpon>
+    </Compile>
     <Compile Include="классы.xaml.cs">
       <DependentUpon>классы.xaml</DependentUpon>
     </Compile>
@@ -116,11 +122,26 @@
     <Compile Include="места_хранения_копия.xaml.cs">
       <DependentUpon>места_хранения_копия.xaml</DependentUpon>
     </Compile>
+    <Compile Include="место_хранения_выбор.xaml.cs">
+      <DependentUpon>место_хранения_выбор.xaml</DependentUpon>
+    </Compile>
     <Compile Include="наличие_элементов.xaml.cs">
       <DependentUpon>наличие_элементов.xaml</DependentUpon>
     </Compile>
     <Compile Include="наличие_элементов_добавить.xaml.cs">
       <DependentUpon>наличие_элементов_добавить.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="поиск_именование.xaml.cs">
+      <DependentUpon>поиск_именование.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="поиск_маркировка.xaml.cs">
+      <DependentUpon>поиск_маркировка.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="поиск_номинал.xaml.cs">
+      <DependentUpon>поиск_номинал.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="поиск_ревизия.xaml.cs">
+      <DependentUpon>поиск_ревизия.xaml</DependentUpon>
     </Compile>
     <Compile Include="производители.xaml.cs">
       <DependentUpon>производители.xaml</DependentUpon>
@@ -152,6 +173,14 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="test_wpf_gleb.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="единицы_измерения_выбор.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="классы.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -228,11 +257,31 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="место_хранения_выбор.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="наличие_элементов.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="наличие_элементов_добавить.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="поиск_именование.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="поиск_маркировка.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="поиск_номинал.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="поиск_ревизия.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
